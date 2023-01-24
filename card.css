@@ -1,0 +1,418 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+
+}
+body{
+    overflow-x: hidden;
+}
+
+.head-container{
+    min-width: 100%;
+    height: 100vh;
+    background-image:   url(img/new1.jpg);
+    background-position: center;
+    background-size: contain;
+    padding-left: 9%;
+    padding-right: 9%;
+box-sizing: border-box;
+border-width: 10px;
+    /* box-shadow: 20px 20px 35px rgba(0, 0, 0, 3); */
+    box-shadow: inset 0 0 1em , 0 0 2em rgb(81, 0, 103);
+   
+
+}
+.nav-bar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+   
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+
+
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: 0.5s;
+}
+nav ul li a:hover{
+    letter-spacing: 2px;
+    
+}
+h1{
+    letter-spacing: 2px;
+}
+@media screen and (min-width:820px) and (max-width: 912px) {
+    .head-container{
+        background-size: cover;
+        background-repeat: no-repeat;
+     
+    }
+    .input-group{
+        margin-top: 800px;
+      
+  
+    }
+}
+
+
+@media screen and (min-width:401) , (max-width:768px){
+    .head-container{
+        background-size: cover;
+        background-repeat: no-repeat;
+     
+    }
+    input{
+        max-width:250px;
+        
+     }
+     .input-group{
+        margin-top: 500px;
+  
+    }
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        margin-left: 10px;
+    }
+   
+}
+
+@media screen and (max-width:400px) {
+    .head-container{
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+    .input-group{
+        margin-top: 500px;
+    }
+
+    input{
+        max-width: 100px;
+
+    }
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        margin-left: 15px;
+    }
+    nav ul li a{
+        font-size: 10px;
+    }
+    .logo{
+        width: 30px;
+    }
+
+}
+
+
+
+
+
+
+/* carousel css */
+
+.carousel-container{
+    margin-top: 15%;
+    margin-bottom: 10%;
+    height: 100vh;
+
+  display: grid;
+  place-items: center;
+  position: relative;
+ 
+
+}
+.carousel-text{
+    position: absolute;
+    top: 0;
+    text-align: center;
+  
+}
+
+.slider {
+    width: 100%;
+    max-width:1200px;
+    height:500px;
+    position: absolute;
+    overflow: hidden;  
+    border-radius: 15px;
+    box-shadow: inset 0 0 1em greenyellow, 0 0 2em black;
+  }
+  
+  .slide {
+    width: 100%;
+    max-width: 1200px;
+    height: 500px;
+    position: absolute;
+    transition: all 0.5s;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .buton {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 18px;
+    
+  }
+  
+  .buton:active {
+    transform: scale(1.1);
+  }
+  .buton:hover{
+    background: #222;
+    color: #fff;
+  }
+  
+  .btn-prev{
+    top: 45%;
+    left: 2%;
+ 
+  }
+  
+  .btn-next{
+    top: 45%;
+    right: 2%;
+   
+  }
+ 
+
+
+.head-img img{
+    width: 100vw;
+    height: 100vh;
+    margin-bottom: 10%;
+}
+/* credit card css */
+
+
+
+
+
+.pay-container{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+
+}
+
+.pay-card{
+    background-image: url(img/credit-card1.jpg);
+    width:50%;
+    height: 80vh;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px gray;
+
+    /* box-shadow: 40px -16px 10px gray; */
+    position: relative;
+    margin-top: 5%;
+
+
+}
+
+
+#button{
+    border: none;
+   
+}
+
+#button img{
+    width: 40PX;
+    height: 40PX; 
+    transition: 0.5s;
+}
+#button img:hover{
+    transform: scale(1.2);
+}
+
+
+#minus-key{
+    display: none;
+}
+
+.credit-btn{
+    cursor: pointer;
+    
+ 
+    border-radius: 40%;
+    position: absolute;
+    right: 3%;
+    bottom: 3%;
+}
+@media screen and (min-width:820px) and (max-width: 912px){
+    .pay-card{
+        width: 95vw;
+    }
+}
+
+
+
+
+@media screen and (min-width:401) , (max-width:768px){
+
+    .pay-card{
+        width: 95%;
+    }
+}
+@media screen and (max-width:400px) {
+    .pay-container{
+        display: block;
+
+
+    }
+    .pay-card{
+        width: 100vw;
+    }
+}
+
+
+
+
+/* card css */
+.cards-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.cards-container h1{
+    text-transform: uppercase;
+}
+
+
+.cards{
+    margin-bottom:40px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* background: #333; */
+    background: rgb(237, 235, 235);
+    color: #fff;
+    border-width: 10px;
+    box-shadow: 20px 20px 35px rgba(0, 0, 0, 3);
+   
+} 
+.cards button{
+    border-style: none;
+    border-radius: 5px;
+    transition: 0.5s;
+    background: #111;
+    color: #fff;
+    height: 40px;
+margin-top: 10%;
+margin-left: 17%;
+}
+.cards button:hover{
+    letter-spacing: 3px;
+    background: #333;
+    color: #fff;
+}
+
+.card h2{
+    margin-left: 23%;
+}
+
+.card img{
+    height: 300px;
+}
+.card{
+    border-width: 10px;
+    box-shadow: 0px 20px 35px rgba(0, 0, 0, 3);
+    transition: 0.5s;
+}
+
+.card:hover{
+
+transform: scale(1.1);
+ 
+cursor: pointer;
+}
+
+.company-image img{
+    width: 100vw;
+    height: 100vh;
+    margin: 60px 0;
+}
+@media screen and (max-width:400px){
+
+    .company-image img{
+        height: 40vh;
+    }
+    .pay-container h1 {
+      text-align: center;
+    }
+  
+}
+
+
+/* footer css */
+.fab img{
+    width: 20px;
+    height:20px ;
+    padding: 0;
+}
+footer a {
+    cursor: pointer;
+    text-decoration: none;
+
+}
+#btn{
+    width: 40px;
+    height: 40px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 30px;
+cursor: pointer;
+display: none;
+}
+#btn{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+#btn:hover{
+    width: 45px;
+    height:45px;
+}
+

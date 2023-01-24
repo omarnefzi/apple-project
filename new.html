@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icons/icons8-apple-logo-50.png">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+<link rel="stylesheet" href="new.css">
+    <title>new</title>
+</head>
+<body>
+
+
+    <div class="container">
+        <header>
+            <a href="#"> <img src="img/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/card.html">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/products.html " target="_blank">Products</a></li>
+                <li><a  href="#" id="lg">New</a></li>
+                <li ><a  href="http://127.0.0.1:5500/logIn.html" target="_blank">Contact us</a></li>
+        
+            </ul>
+        </header>
+        
+        <div class="content">
+            <div class="text">
+                <h2>iphone 13 pro max</h2>
+                <p>The New IPhone 13 Pro Max  Is Available In Tunisia At The Best Price
+                </p>
+                <a class="btnPurchase" href="#"> purchase</a>
+            </div>
+            <div class="image">
+                <img class="img" src="img/0.png" >
+            </div>
+        </div>
+        <div class="icons">
+            <img onclick="phones(this.src)  ; colors('#111')" src="img/0.png" alt="">
+            <img onclick="phones(this.src)  ; colors('#247ec8')" src="img/1.png"  alt="">
+            <img onclick="phones(this.src)  ; colors('#1e1e1e')" src="img/2.png" alt="">
+            <img onclick="phones(this.src)  ; colors('#c79b53')" src="img/3.png" alt="">
+            <img onclick="phones(this.src)  ; colors('#c82525')" src="img/4.png" alt="">
+        </div> ;
+        
+            </div>
+
+<script>
+    // header imgs js
+let img = document.querySelector('.img')
+let container=document.querySelector('.container')
+
+function phones(phone){
+img.src= phone
+img.style.animation= 'fadeIn'
+        img.style.animationDuration='2s'
+
+}
+
+function colors(color){
+container.style.background =color
+container.style.transition='2s'
+
+
+}
+
+
+console.log()
+
+
+
+
+
+</script>
+    
+</body>
+</html>
